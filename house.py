@@ -1,14 +1,15 @@
 name = input("What is your name? ")
 
-if name == "Ragnar":
-    print("Norway")
-elif name == "Floki":
-    print("Norway")
-elif name == "Rollo":
-    print("Norway")
-elif name == "Lagertha":
-    print("Norway")
-elif name == "Jon Snow":
-    print("Winterfell")
-else:
-    print("Who?")
+match name:
+    case "Ragnar":
+        print("Norway")
+    case "Floki":
+        print("Norway")
+    case "Rollo":
+        print("Norway")
+    case "Lagertha":
+        print("Norway")
+    case "Jon Snow":
+        print("Winterfell")
+    case _:
+        print("Who?")
