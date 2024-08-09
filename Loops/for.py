@@ -1,7 +1,16 @@
-while True:
-    n = int(input("What is n? "))
-    if n > 0:
-        break
+def main():
+    number = get_number()
+    meow(number)
 
-for _ in range(n):
-    print("meow")
+def get_number():
+    while True:
+        n = int(input("What is n? "))
+        if n > 0:
+            return n
+
+def meow(n):
+    for _ in range(n):
+        print("meow")
+
+
+main()
